@@ -1,0 +1,343 @@
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+    width: auto;
+    position: relative;
+}
+
+.banner{
+    padding: 0;
+    margin: 0;
+}
+a{
+    padding: 0;
+    margin: 0;
+}
+ #banner_img a{
+     height: 600px;
+    display: block;
+     transition: 0.2s;
+    /*background: url("../images/nav1.jpg") no-repeat center center;*/
+}
+ #pre,#after{
+    width: 41px;
+    height: 69px;
+    display: inline-block;
+     position: absolute;
+     top:300px;
+}
+#pre{
+    left: 10px;
+    background: url("../images/pre.png");
+}
+#after{
+    right: 10px;
+    background: url("../images/after.png");
+}
+#li_list{
+    margin: 0 auto;
+    position: absolute;
+    top: 550px;
+    left: 600px;
+}
+#li_list li{
+    float: left;
+    margin: 0 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: #383838;
+}
+#li_list .li_active{
+    width: 50px;
+    height: 8px;
+    background: #fff;
+    box-shadow: 0px 0px 1px #ccc;
+}
+/*content内容部分*/
+.content{
+    background: #f7f7f7;
+}
+.div_list{
+    margin: 50px 0;
+    float: left;
+    width: 25%;
+}
+/*遮罩部分*/
+.wrapper{
+    margin: 0 16px;
+    width: 264px;
+    height: 333px;
+    background: #fff;
+    border: 6px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.zhezhao{
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    border: 400px #fff solid;
+    position: absolute;
+    z-index: 1;
+    left:-250px;
+    top:-250px;
+}
+.frist,.thrid{
+    position: absolute;
+    top: 0;
+}
+.frist{
+    z-index: 2;
+}
+.wrapper:hover .zhezhao{
+    width: 800px;
+    height: 800px;
+    left:-750px;
+    top:-800px;
+    transition: 0.5s ease-in-out;
+}
+.box{
+    width: 108px;
+    height: 108px;
+    border-radius: 100%;
+    position: absolute;
+    left: 80px;
+    top:40px;
+    z-index: 2;
+    overflow: hidden;
+}
+.wrapper:hover{
+    border: 6px solid #eee;
+}
+.wrapper:hover .frist{
+    z-index: -1;
+}
+/*明星单品*/
+.star{
+    /*background: #ccc;*/
+    margin-top: 60px;
+}
+.star_content{
+    /*background: #016999;*/
+}
+.star_header{
+    /*background: #fff;*/
+    margin-bottom: 36px;
+}
+.star_header p{
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: bolder;
+    color:#434242;
+    float: left;
+}
+.star_ul{
+    float: right;
+}
+.star_ul li{
+    float: left;
+    margin:30px 10px 0;
+}
+.star_ul a{
+    text-decoration: none;
+    color: rgb(164, 163, 163) ;
+    font-size: 14px;
+    line-height: 16px;
+}
+.star_ul .star_active{
+    color: #434242;
+}
+.star_img .star_left{
+    float: left;
+    width: 584px;
+    height: 782px;
+    margin-right: 4px;
+}
+ .star_center, .star_right{
+    float: left;
+    width: 300px;
+    height: 388px;
+    margin:0 3px 7px;
+    position: relative;
+     overflow: hidden;
+}
+.star_img .star_center a{
+    text-decoration: none;
+}
+.star_center .pr,.star_right .pr{
+    position: absolute;
+    top:140px;
+    left:120px;
+    color:rgb(151, 152, 152);
+}
+.star_center a:hover img, .star_right a:hover img{
+   margin-top: -5px;
+}
+
+/*世界因你而精彩 star*/
+.world{
+    margin-top: 40px;
+    height: 527px;
+    background:url("../images/world01.jpg") no-repeat top center;
+    position: relative;
+    overflow: hidden;
+}
+
+ .world_ul{
+    position: absolute;
+    padding: 0;
+   /*width:1890px;*/
+    bottom: 60px;
+    background: #ccc;
+    height: 249px;
+    left: 0;
+    width: auto;
+}
+.world_ul li{
+    float: left;
+    height: 243px;
+    width: 269.7px;
+}
+.world_ul li img{
+    width: 100%;
+}
+.world_left,.world_right{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 60px;
+    background: rgba(0,0,0,0.8);
+}
+.world_left{
+    left: 0;
+}
+.world_right{
+    right: 0;
+}
+.wl_btn,.wr_btn{
+    width: 24px;
+    height: 44px;
+    position: absolute;
+    top:110px;
+
+}
+.wl_btn{
+    background: url("../images/world_btn.png");
+    right:15px;
+
+}
+.wr_btn{
+    background: url("../images/world_right.png");
+   left:15px;
+}
+/*世界因你而精彩 end*/
+
+/*底部样式*/
+.footer{
+    /*height: 500px;*/
+    background:#272727;
+    margin-top: 40px;
+}
+.footer_content{
+    /*height: 500px;*/
+    /*background: red;*/
+}
+.footer_ul ul{
+    float: left;
+    width: 210px;
+    padding: 10px 0 0;
+}
+.footer_ul .web{
+    width: 240px;
+}
+.footer_ul{
+    float: right;
+}
+.footer_ul .gov{
+    width: 230px;
+}
+.footer_ul h4{
+    color: #ccc;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.footer_ul li a{
+    color: #ccc;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.footer_ul .li1 a{
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background:#ffff00;
+    margin: 12px 2px 5px;
+}
+
+.footer_ul .gov .a1{
+     background:url("../images/platform_icons_sprits.png")no-repeat -8px -190px;
+ }
+
+.footer_ul .gov .a2{
+    background:url("../images/platform_icons_sprits.png")no-repeat -63px -190px;
+}
+.footer_ul .gov .a3{
+    background:url("../images/platform_icons_sprits.png")no-repeat -118px -190px;
+}
+
+.footer_ul .gov .a4{
+    background:url("../images/platform_icons_sprits.png")no-repeat -175px -190px;
+
+}
+.footer_ul .gov .a1:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -8px -238px;
+    /*transition: 0.5s;*/
+}
+
+.footer_ul .gov .a2:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -63px -238px;
+    /*transition: 0.5s;*/
+}
+.footer_ul .gov .a3:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -118px -238px;
+    /*transition: 0.5s;*/
+}
+
+.footer_ul .gov .a4:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -175px -238px;
+    /*transition: 0.5s;*/
+}
+.footer_ul .li2 .a_1{
+    width: 82px;
+    height: 20px;
+    display: inline-block;
+    background:url("../images/platform_icons_sprits.png")no-repeat -8px -131px;
+    margin: 10px 0 0 2px;
+}
+.footer_ul .li2 .a_1:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -8px -158px;
+
+}
+.footer_ul .li2 .a_2{
+    width: 74px;
+    height: 22px;
+    display: inline-block;
+    background:url("../images/platform_icons_sprits.png")no-repeat -119px -130px;
+    margin: 5px 0 0 12px;
+}
+.footer_ul .li2 .a_2:hover{
+    background:url("../images/platform_icons_sprits.png")no-repeat -119px -156px;
+}
+.footer .bq{
+    margin-top: 20px;
+    border-top: 1px solid #383838;
+}
+.footer .bq li{
+    padding: 10px 0 10px;
+    float: left;
+    font-size: 14px;
+    color:#ccc;
+    margin-left: 160px;
+}

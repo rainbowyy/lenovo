@@ -1,0 +1,74 @@
+.header{
+    color: #fff;
+    /*background: #cccccc;*/
+    position:absolute;
+    width: 100%;
+
+}
+.w{
+   width: 1200px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.left{
+    float: left;
+}
+.navbar{
+    float: left;
+    /*background: yellow;*/
+}
+.navbar ul li{
+    float: left;
+    margin: 0 12px;
+    /*background: #ccc;*/
+}
+.navbar li a{
+    color: #fff;
+    line-height: 70px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.rnavbar{
+    float: right;
+    /*background: blue;*/
+}
+.user li{
+    float: left;
+    margin: 0 10px;
+}
+.form_search,.user{
+
+    float: left;
+    margin:15px 15px;
+}
+.form_search{
+    float: left;
+}
+.form_search .search{
+padding:6px 15px;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.8);
+}
+.search_a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    /*background: yellow;*/
+    position: relative;
+    border-radius: 15px;
+    left:-38px;
+    top:7px;
+    background:#fff url("../images/search_btn_03.png") no-repeat center;
+}
+
